@@ -37,7 +37,7 @@
 
 :arrows_counterclockwise:  **_Sempre atualize e teste_** no localhost...
 
-   ##### Bonus: :coffee:
+   ## Bonus: :coffee:
 
    _Se estiver com problemas para criar a classe de configuração do Swagger, segue uma colinha:_
 
