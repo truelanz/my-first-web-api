@@ -5,12 +5,20 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import dio.myfirstwebapi.handler.RequiredField;
+//import dio.myfirstwebapi.handler.BusinessException;
 import dio.myfirstwebapi.model.User;
 
 @Repository
 public class UserRepository {
     public void save(User user){
-        if(user.getId()==   null)
+        if(user.getLogin() == null)
+        throw new RequiredField("login");
+
+        if(user.getPassword() == null)
+        throw new RequiredField("password");
+          
+        else if(user.getId() == null)
           System.out.println("SAVE - Recebendo o usuário na camada de repositório");
         else
          System.out.println("UPDATE - Recebendo o usuário na camada de repositório");
