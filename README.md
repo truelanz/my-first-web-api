@@ -54,7 +54,6 @@
    ![Download dependência VSCODE](/assets/Download%20dependência%20VSCODE.jpg)
 
    - clique em `springfox.swagger2`.
-   - Reze :fearful:
 
    _Referências_:
    https://springfox.github.io/springfox/docs/current/#migrating-from-existing-2-x-version
