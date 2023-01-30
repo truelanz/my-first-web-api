@@ -15,13 +15,15 @@ public class UserRepository {
         if(user.getLogin() == null)
         throw new RequiredField("login");
 
-        if(user.getPassword() == null)
+        else if(user.getPassword() == null)
         throw new RequiredField("password");
           
         else if(user.getId() == null)
-          System.out.println("SAVE - Recebendo o usuário na camada de repositório");
+        throw new RequiredField("Id");
+
         else
-         System.out.println("UPDATE - Recebendo o usuário na camada de repositório");
+        System.out.println("SAVE - Recebendo o usuário na camada de repositório");
+        System.out.println("UPDATE - Recebendo o usuário na camada de repositório");
         
         System.out.println(user);
     }
