@@ -31,7 +31,7 @@
 //Salve e sincronize seu pom.xml (essa `3.0.0` versão não se faz necessário a dependency ~~`springfox-swagger-ui`~~).
 ###### Tente executar com: http://localhost:8080/swagger-ui/index.html ou: http://localhost:8080/swagger-ui/
 
- *Caso seu maven não estivesse baixando o "kit Swagger" vá na sua classe de configurações do seu Swagger e veja se agora aparece as anotações e métodos da dependência.* _(Não se faz necessária a utilização `@EnableSwagger2`, mas ela aparecerá, junto com `@EnableOpenAi`._
+ *Caso seu maven não estivesse baixando a "biblioteca Swagger" vá na sua classe de configurações do seu Swagger e veja se agora aparece as anotações e métodos da dependência.* _(Não se faz necessária a utilização `@EnableSwagger2`, mas ela aparecerá, junto com `@EnableOpenAi`._
 
   - Caso não apareça e/ou dê erro na execução - mude sua versão do Java no `pom.xml`, você pode testar em ordem decrescente se quiser até que funcione, ou coloque a versão `1.8` do java como eu fiz: `<java.version>1.8</java.version>` .
 
@@ -43,7 +43,7 @@
 
    ![swagger configuration](https://i.imgur.com/167Z4y8.jpg)
 
-   _Você usa a **IDE VSCODE** e ainda assim não está baixando o "kit Swagger?_
+   _Você usa a **IDE VSCODE** e ainda assim não está baixando a "biblioteca Swagger?_
    - Exclua sua dependencia `io.springfox` do `pom.xml`.
    - Feixe sua IDE, exclua sua pasta repository em Usuário/"usuário"/m2/.
    - Abra seu VSCODE e espere baixar novamente seus repositórios.
